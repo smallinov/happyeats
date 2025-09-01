@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Happy Eats™ - Food Delivery by Kids</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <header>
+    <h1>Happy Eats™</h1>
+    <p class="tagline">Food delivery by kids with a special note that makes your day!</p>
+  </header>
+
+  <nav>
+    <button class="nav-btn active" onclick="showPage('home')">Home</button>
+    <button class="nav-btn" onclick="showPage('about')">About Us</button>
+    <button class="nav-btn" onclick="showPage('staff')">Staff</button>
+    <button class="nav-btn" onclick="showPage('service')">Use Our Service</button>
+    <button class="nav-btn" onclick="showPage('donate')">Donate</button>
+    <button class="nav-btn" onclick="showPage('requests')">Store Requests</button>
+    <button class="nav-btn" onclick="showPage('thanks')">Special Thanks</button>
+  </nav>
+
+  <main>
+    <!-- Home Page -->
+    <div id="home" class="page active">
+      <h2>Welcome to Happy Eats™!</h2>
+      <p>We deliver food, snacks and drinks from Wesco in North Muskegon on Ruddiman Dr with a special note that makes your day!</p>
+      <div class="highlight-box">
+        <h3>Order Now!</h3>
+        <p>Text us at <strong>616-516-9613</strong></p>
+        <p>Include your exact order and address</p>
+      </div>
+    </div>
+
+    <!-- About Us Page -->
+    <div id="about" class="page">
+      <h2>About Us!</h2>
+      <p>Hi my name is Sophia Smallegan I currently own Happy Eats™ a business owned by kids where we deliver food, snacks and drinks with a special note that makes your day!!!!! from the Wesco in North Muskegon on Ruddiman Dr.</p>
+      
+      <p>This business started when I felt like kids need more jobs to make money then I heard that people were Ubering chocolate bars!!!!! How crazy is that I thought there has got to be a cheaper alternative and there really isn't and nothing like that run by kids.</p>
+      
+      <p>So that is why I hope you support our business instead. Thank You!</p>
+    </div>
+
+    <!-- Staff Page -->
+    <div id="staff" class="page">
+      <h2>Our Amazing Staff</h2>
+      <div class="staff-grid">
+        <div class="staff-member">
+          <div class="photo-placeholder">Photo Coming Soon</div>
+          <h3>Sophia Smallegan</h3>
+          <p>Founder & Owner</p>
+          <p>The visionary behind Happy Eats™!</p>
+        </div>
+        <div class="staff-member">
+          <div class="photo-placeholder">Photo Coming Soon</div>
+          <h3>Team Member</h3>
+          <p>Position</p>
+          <p>Description coming soon...</p>
+        </div>
+        <div class="team-photo">
+          <div class="photo-placeholder large">Team Photo Coming Soon</div>
+          <p>Our whole amazing team!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Use Our Service Page -->
+    <div id="service" class="page">
+      <h2>Use Our Service!</h2>
+      <p>Hi can we take your order</p>
+      <p><strong>Please text 616-516-9613</strong></p>
+      
+      <form class="order-form">
+        <h3>Order Details</h3>
+        <label for="order">Your Order:</label>
+        <textarea id="order" placeholder="Please describe your exact order..."></textarea>
+        
+        <label for="address">Delivery Address:</label>
+        <textarea id="address" placeholder="Please provide your complete address..."></textarea>
+        
+        <label for="employee-request">Special Employee Request (optional):</label>
+        <input type="text" id="employee-request" placeholder="Any specific team member you'd like to deliver?">
+        
+        <p class="form-note">Text us your exact order and please tell us your address as well thank you in advance -Happy Eats™</p>
+      </form>
+    </div>
+
+    
+
+    <!-- Donate Page -->
+    <div id="donate" class="page">
+      <h2>Donate</h2>
+      <p>Hi thank you for all donations we appreciate them all so much each and every donation counts</p>
+      <p><strong>Text 616-516-9613 to donate</strong></p>
+      
+      <form class="donate-form">
+        <label for="donor-name">Your Name:</label>
+        <input type="text" id="donor-name" placeholder="Your name">
+        
+        <label for="donation-amount">Donation Amount:</label>
+        <input type="number" id="donation-amount" placeholder="$0.00" min="1" step="0.01">
+        
+        <label for="donor-message">Message (optional):</label>
+        <textarea id="donor-message" placeholder="Any message you'd like to include..."></textarea>
+      </form>
+      
+      <p class="thank-you">Keep being awesome<br>Happy Eats™</p>
+    </div>
+
+    <!-- Store Requests Page -->
+    <div id="requests" class="page">
+      <h2>Store or Restaurant Requests</h2>
+      <p>Let us know what places you'd like us to deliver from that we don't currently serve!</p>
+      
+      <form class="request-form">
+        <label for="store-name">Store/Restaurant Name:</label>
+        <input type="text" id="store-name" placeholder="Name of the place">
+        
+        <label for="store-location">Location/Address:</label>
+        <input type="text" id="store-location" placeholder="Where is it located?">
+        
+        <label for="request-reason">Why would you like us to deliver from here?</label>
+        <textarea id="request-reason" placeholder="Tell us why this would be a great addition..."></textarea>
+        
+        <p class="form-note">Text your requests to 616-516-9613</p>
+      </form>
+    </div>
+
+    <!-- Special Thanks Page -->
+    <div id="thanks" class="page">
+      <h2>A Special Thanks</h2>
+      <p>Thank you to everyone who helped support my dream of having my own business</p>
+      
+      <div class="shoutouts">
+        <h3>Shout out to:</h3>
+        <div class="company-thanks">
+          <p><strong>Owl Computing</strong> and <strong>Bold Brands!</strong></p>
+          <p>These companies are AWESOME!!!</p>
+        </div>>
+      </div>
+      
+      <div class="general-thanks">
+        <p>And thank you to all our customers, supporters, and everyone who believes in Happy Eats™!</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Happy Eats™ - A business owned by kids</p>
+    <p>Contact us: 616-516-9613</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
