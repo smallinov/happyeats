@@ -30,17 +30,8 @@ function showPage(pageId) {
   });
 }
 
-// Form interaction helpers
+// Page interaction helpers
 document.addEventListener('DOMContentLoaded', function() {
-  // Add form submission handlers (for future enhancement)
-  const forms = document.querySelectorAll('form');
-  forms.forEach(form => {
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      alert('Please text 616-516-9613 with your information!');
-    });
-  });
-
   // Add hover effects to staff members
   const staffMembers = document.querySelectorAll('.staff-member');
   staffMembers.forEach(member => {
